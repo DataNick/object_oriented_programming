@@ -74,7 +74,10 @@ class MarsRover
 	# def left(dir)
 	#end
 end
-rover = MarsRover.new(0,0,"N")
+
+puts "What direction would you like Rover1 to begin at? ('N', 'S', 'E', 'W')"
+dir_point = gets.chomp.upcase.to_s
+rover = MarsRover.new(0,0, dir_point)
 
 puts "Rover's current position is #{rover.x}, #{rover.y}, facing #{rover.direction}"
 puts rover.read_instruction("R")
