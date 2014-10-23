@@ -22,11 +22,11 @@ class MarsRover
 	def move
 		if @direction == "N"
 			@y += 1
-		elsif @dir = "S"
+		elsif @dir == "S"
 			@y -= 1
-		elsif @dir = "E"
+		elsif @dir == "E"
 			@x += 1
-		elsif @dir = "W"
+		elsif @dir == "W"
 			@x -= 1
 		end
 	end
