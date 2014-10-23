@@ -14,6 +14,8 @@ class MarsRover
 			turn_left
 		elsif instruction == "R"
 			turn_right
+		else
+			puts "Instruction not recognizable"
 		end
 	end
 
@@ -26,6 +28,18 @@ class MarsRover
 			@x += 1
 		elsif @dir = "W"
 			@x -= 1
+		end
+	end
+
+	def turn_left
+		if @direction == "N"
+			@direction == "W"
+		elsif @direction == "S"
+			@direction == "E"
+		elsif @direction == "W"
+			@direction == "S"
+		elsif @direction == "E"
+			@direciton == "N"
 		end
 	end
 	
