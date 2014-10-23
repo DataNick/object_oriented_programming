@@ -43,6 +43,17 @@ class MarsRover
 		end
 	end
 	
+	def turn_right
+		if @direction == "N"
+			@direction == "E"
+		elsif @direction == "S"
+			@direction == "W"
+		elsif @direction == "W"
+			@direction == "N"
+		elsif @direction == "E"
+			@direciton == "S"
+		end
+	end
 	# def position
 	# 	puts "I am at #{x}, #{y} heading #{dir}."
 	# end
