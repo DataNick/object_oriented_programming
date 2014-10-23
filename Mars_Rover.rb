@@ -22,36 +22,36 @@ class MarsRover
 	def move
 		if @direction == "N"
 			@y += 1
-		elsif @dir == "S"
+		elsif @direction == "S"
 			@y -= 1
-		elsif @dir == "E"
+		elsif @direction == "E"
 			@x += 1
-		elsif @dir == "W"
+		elsif @direction == "W"
 			@x -= 1
 		end
 	end
 
 	def turn_left
 		if @direction == "N"
-			@direction == "W"
+			@direction = "W"
 		elsif @direction == "S"
-			@direction == "E"
+			@direction = "E"
 		elsif @direction == "W"
-			@direction == "S"
+			@direction = "S"
 		elsif @direction == "E"
-			@direciton == "N"
+			@direction ="N"
 		end
 	end
 	
 	def turn_right
 		if @direction == "N"
-			@direction == "E"
+			@direction = "E"
 		elsif @direction == "S"
-			@direction == "W"
+			@direction = "W"
 		elsif @direction == "W"
-			@direction == "N"
+			@direction = "N"
 		elsif @direction == "E"
-			@direciton == "S"
+			@direction = "S"
 		end
 	end
 	# def position
@@ -77,7 +77,7 @@ end
 rover = MarsRover.new(0,0,"N")
 
 puts "Rover's current position is #{rover.x}, #{rover.y}, facing #{rover.direction}"
-puts rover.read_instruction("M")
+puts rover.read_instruction("R")
 puts "Rover's current position is #{rover.x}, #{rover.y}, facing #{rover.direction}"
 
 
